@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>HTML Academy: Нёрдс</title>
+</head>
+<body>
+<header>
+  <div class="head-up">
+    <a href="index.html"><img src="img/nerds-logo.svg" class="nerds_logo" alt="Nerds" width="160" height="65"></a>
+    <nav class="site-nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="">Студия</a></li>
+        <li class="nav-item"><a href="">Клиенты</a></li>
+        <li class="nav-item active-item">Магазин</li>
+        <li class="nav-item"><a href="">Контакты</a></li>
+      </ul>
+    </nav>
+    <!--КОРЗИНА<img src="img/basket-icon.png" alt="Корзина" class="basket_ico" width="15" height="15">-->
+    <div class="cart nav-item">
+      <a href="" class="cart-ico">Корзина</a>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="presets-txt">
+    <h1>Магазин готовых шаблонов</h1>
+  </div>
+  <div class="content-store">
+    <section class="parametrs">
+      <h2 class="visually-hidden">Параметры товаров</h2>
+      <form action="" type="post" class="form_presets">
+        <div class="parametrs-coast">
+          <p class="coast-header">Стоимость:</p>
+          <div class="block-coast-scroll">
+            <input type="range" min="0" max="25000" step="1000" value="5000">
+          </div>
+          <div class="block-coast-num">
+            <label for="coast_min_id" class="coast-txt">от
+              <input type="text" name="coast_min" id="coast_min_id" size="5" placeholder="0" class="coast-min-max">
+            </label>
+            <label for="coast_max_id" class="coast-txt">до
+              <input type="text" name="coast_max" id="coast_max_id" size="5" placeholder="15 000" class="coast-min-max">
+            </label>
+          </div>
+        </div>
+        <div class="parametrs-web">
+          <p class="grid">Сетка:</p>
+          <div class="grid-radio">
+            <input type="radio" name="grid" id="adapt_id" value="adapt" checked>
+            <label for="adapt_id">
+              <span></span>
+              Адаптивная
+            </label>
+            <input type="radio" name="grid" id="fixed_id" value="fixed">
+            <label for="fixed_id">
+              <span></span>
+              Фиксированная
+            </label>
+            <input type="radio" name="grid" id="strach_id" value="strach">
+            <label for="strach_id">
+              <span></span>
+              Резиновая
+            </label>
+          </div>
+        </div>
+        <div class="parametrs-option">
+          <p class="features">Особенности:</p>
+          <div class="features-chekbox">
+              <input type="checkbox" name="slider" id="slider_id" checked>
+            <label for="slider_id">
+              <span></span>
+              Слайдер
+            </label>
+              <input type="checkbox" name="advantage" id="advantage_id">
+            <label for="advantage_id">
+              <span></span>
+              Блок преимуществ
+            </label>
+              <input type="checkbox" name="news" id="news_id">
+            <label for="news_id">
+              <span></span>
+              Новости
+            </label>
+              <input type="checkbox" name="galery" id="gelery_id">
+            <label for="gelery_id">
+              <span></span>
+              Галерея
+            </label>
+              <input type="checkbox" name="cart" id="cart_id">
+            <label for="cart_id">
+              <span></span>
+              Корзина
+            </label>
+          </div>
+        </div>
+        <input type="submit" name="search_product" class="search-bttn" id="search_id" value="ПОКАЗАТЬ">
+      </form>
+    </section>
+    <!--Изобр. шаблонов справа, сортировка-->
+    <section class="product-prev">
+      <!--====ФОРМА СОРТИРОВКИ====-->
+      <div class="sort">
+        <div class="sort-txt">
+          <p>Сортировать:</p>
+        </div>
+        <div class="sort-form">
+          <a href="#" class="sort-result sort-active">по цене</a>
+          <a href="#" class="sort-result">по типу</a>
+          <a href="#" class="sort-result">по названию</a>
+          <a href="#" class="sort-result sort-active"><div class="icon-down"></div> </a>
+          <a href="#" class="sort-result"><div class="icon-up"></div> </a>
+        </div>
+      </div>
+      <h2 class="visually-hidden">Результаты поиска</h2>
+      <div class="product-info">
+        <!--1-->
+        <div class="product-store-item">
+          <img src="img/browser.png" alt="browser" width="360" height="40" class="browser-img">
+          <a href="">
+            <img src="img/img-sedona-jpg.png" alt="Sedona" width="360" height="576">
+          </a>
+          <div class="hidden-prod-inf visually-hidden">
+            <p class="prod-name">Sedona</p>
+            <p class="prod-description">Информационный сайт
+              для туристов</p>
+            <button type="button" name="sedona" id="sedona_prod" class="store-buy-button">9 900 РУБ.</button>
+          </div>
+        </div>
+
+        <!--2-->
+        <div class="product-store-item" id="pinkapp_id">
+          <img src="img/browser.png" alt="browser" width="360" height="40" class="browser-img">
+          <a href="">
+            <img src="img/img-pink-jpg.png" alt="Pink" width="360" height="576">
+          </a>
+          <div class="hidden-prod-inf visually-hidden">
+            <p class="prod-name">Pink App</p>
+            <p class="prod-description">Продуктовый лендинг
+              приложения для iOS и Android</p>
+            <button type="button" name="pinkapp" id="pinkapp_prod" class="store-buy-button">9 900 РУБ.</button>
+          </div>
+        </div>
+        <!--3-->
+        <div class="product-store-item" id="barber_id">
+          <img src="img/browser.png" alt="browser" width="360" height="40" class="browser-img">
+          <a href="">
+            <img src="img/img-barbershop-jpg.png" alt="Barbershop" width="360" height="576">
+          </a>
+          <div class="hidden-prod-inf visually-hidden">
+            <p class="prod-name">Barbershop</p>
+            <p class="prod-description">Сайт салона красоты. <br>
+              Для мужчин, да.</p>
+            <button type="button" name="barber" id="barber_prod" class="store-buy-button">9 900 РУБ.</button>
+          </div>
+        </div>
+
+        <!--4-->
+        <div class="product-store-item" id="mishka_id">
+          <img src="img/browser.png" alt="browser" width="360" height="40" class="browser-img">
+          <a href="">
+            <img src="img/img-mishka-jpg.png" alt="Mishka" width="360" height="576">
+          </a>
+          <div class="hidden-prod-inf visually-hidden">
+            <p class="prod-name">Mishka</p>
+            <p class="prod-description">Интернет-магазин
+              вязаных игрушек</p>
+            <button type="button" name="mishka" id="mishka_prod" class="store-buy-button">9 900 РУБ.</button>
+          </div>
+        </div>
+        <!--5-->
+        <div class="product-store-item" id="aplus_id">
+          <img src="img/browser.png" alt="browser" width="360" height="40" class="browser-img">
+          <a href="">
+            <img src="img/img-aplus-jpg.png" alt="Aplus" width="360" height="576">
+          </a>
+          <div class="hidden-prod-inf visually-hidden">
+            <p class="prod-name">A Plus</p>
+            <p class="prod-description">Лендинг курсов повышения квалификации</p>
+            <button type="button" name="aplus" id="aplus_prod" class="store-buy-button">9 900 РУБ.</button>
+          </div>
+        </div>
+
+        <!--6-->
+        <div class="product-store-item" id="kvast_id">
+          <img src="img/browser.png" alt="browser" width="360" height="40" class="browser-img">
+          <a href="">
+            <img src="img/img-kvast-jpg.png" alt="Kvast" width="360" height="576">
+          </a>
+          <div class="hidden-prod-inf visually-hidden">
+            <p class="prod-name">Кваст</p>
+            <p class="prod-description">Промо-сайт производителя
+              крафтового кваса</p>
+            <button type="button" name="kvast" id="kvast_prod" class="store-buy-button">9 900 РУБ.</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+<section class="map">
+  <h2 class="visually-hidden">Обратная связь</h2>
+  <div class="adres">
+    <p class="contact-name">Nёrds design studio</p>
+    <P class="contact-adres">191186, Санкт-Петербург,<br>
+      ул. Б. Конюшенная, д. 19/8
+      <br>
+      <br>
+      тел. +7 (812) 275-75-75</P>
+    <button type="button" name="scribe" class="contact-red-button">напишите нам</button>
+  </div>
+  <div class="post-window visually-hidden">
+    <p>Напишите нам</p>
+    <form action="" type="post" class="post-form">
+      <label for="name">Ваше имя:<br>
+        <input type="text" name="your_name" id="name" placeholder="Имя Фамилия">
+      </label>
+      <label for="mail">Ваш e-mail:<br>
+        <input type="text" name="your_mail" id="mail" placeholder="email@example.com">
+      </label>
+      <label for="message" class="message">Текст письма:<br>
+        <textarea name="your_message" id="message" cols="" rows="" placeholder="В свободной форме"></textarea>
+      </label><br>
+      <input type="submit" name="get" id="get_btn" value="ОТПРАВИТЬ" class="submit-button">
+      <div class="close"></div>
+    </form>
+  </div>
+</section>
+<!--FOOTER иконки соц.сети-->
+<footer>
+  <div class="footer-content">
+    <div class="social">
+      <a href="" class="social-link-vk">
+        <div class="social-list">
+          <div class="vk"></div>
+        </div>
+      </a>
+      <a href="" class="social-link-fb">
+        <div class="social-list">
+          <div class="fb"></div>
+        </div>
+      </a>
+      <a href="" class="social-link-instagram">
+        <div class="social-list">
+          <div class="insta"></div>
+        </div>
+      </a>
+    </div>
+    <div class="footer-txt">
+      <p class="footer-txt-header">Давайте дружить, это выгодно!</p>
+      <p class="footer-txt-p">Скидка 10% для друзей из социальныхсетей.</p>
+    </div>
+  </div>
+</footer>
+<!--ФОРМА ОТПРАВКИ ПИСЬМА-->
+<script src="js/script.js"></script>
+</body>
+</html>
