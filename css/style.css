@@ -30,7 +30,7 @@
 
 body {
   width: 1440px;
-  margin: 0;
+  margin: 0 auto;
   color: black;
   font-family: Roboto, Arial sans-serif;
   text-transform: none;
@@ -131,18 +131,26 @@ header {
   list-style: none;
   padding-left: 0;
   margin: 0;
+  overflow: hidden;
+  display: flex;
+  position: relative;
 }
 
 .slide {
   display: flex;
   flex-direction: row;
-  width: 1160px;
+  min-width: 1160px;
   min-height: 412px;
+  transition: 1s ease-in;
+}
+
+.slide1 {
+  margin-left: 0;
 }
 
 .content-text-header {
   display: flex;
-  min-width: 515px;
+  /* min-width: 515px; */
   margin-top: 55px;
   margin-bottom: 28px;
   box-sizing: content-box;
@@ -498,6 +506,7 @@ header {
   display: flex;
   width: 1440px;
   height: 416px;
+  box-sizing: border-box;
   background: url(../img/2.png) no-repeat;
   padding-left: 140px;
   margin-top: 80px;
